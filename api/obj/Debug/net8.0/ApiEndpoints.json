@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "CodeDetection.Controllers.ProgramController",
+    "Method": "GetALLResponse",
+    "RelativePath": "Detect",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CodeDetection.ImageRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeDetection.Controllers.ProgramController",
+    "Method": "GetBARResponse",
+    "RelativePath": "Detect/bar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CodeDetection.ImageRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeDetection.Controllers.ProgramController",
+    "Method": "GetQRResponse",
+    "RelativePath": "Detect/qr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CodeDetection.ImageRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
