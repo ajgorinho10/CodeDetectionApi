@@ -49,31 +49,33 @@ namespace KodQR
 
             //KODY BAR
             //-------------------------------------------------------------------
-            //string filePath = "kodyBarZdjecia//bar2_1.jpg"; //-1
-            //string filePath = "kodyBarZdjecia//bar2_2.jpg"; //-1
             //string filePath = "kodyBarZdjecia//bar2_3.jpg";
             //string filePath = "kodyBarZdjecia//bar2_4.jpg"; 
             //string filePath = "kodyBarZdjecia//bar2_5.jpg";
             //string filePath = "kodyBarZdjecia//bar2_6.jpg"; 
-            //string filePath = "kodyBarZdjecia//bar2_7.jpg";
+            string filePath = "kodyBarZdjecia//bar2_7.jpg";
             //string filePath = "kodyBarZdjecia//bar2_8.jpg";
             //string filePath = "kodyBarZdjecia//bar2_9.jpg"; // -1
+            //string filePath = "kodyBarZdjecia//bar2_10.jpg"; 
+            //string filePath = "kodyBarZdjecia//bar2_11.jpg"; 
+            //string filePath = "kodyBarZdjecia//bar2_12.jpg";
+            //string filePath = "kodyBarZdjecia//bar2_13.jpg";
+            //string filePath = "kodyBarZdjecia//bar2_14.jpg";
             //-------------------------------------------------------------------
 
-            string filePath = "kodyBarZdjecia//qr_bar.jpg";
+            //string filePath = "kodyBarZdjecia//qr_bar.jpg";
 
             DateTime startTime = DateTime.Now;
 
-            Detection();
+            Detection(filePath);
 
             DateTime endTime = DateTime.Now;
             TimeSpan duration = endTime - startTime;
             Console.WriteLine($"Czas wykonania: {duration.TotalMilliseconds} ms");
         }
 
-        public static List<String> Detection()
+        public static List<String> Detection(string filePath)
         {
-            string filePath = "kodyBarZdjecia//qr_bar.jpg";
             List<String> list = new List<String>();
             void QR()
             {

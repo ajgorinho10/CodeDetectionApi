@@ -23,10 +23,11 @@ namespace KodQR.bar
         {
             int x = img.Width;
             int y = img.Height;
-            if(this.img.Width > 2000 || this.img.Height > 2000)
+            double ratio = (double)this.img.Height / (double)this.img.Width;
+            if(this.img.Width > 1200 || this.img.Height > 1200)
             {
-                x /= 2;
-                y /= 2;
+                x = 1600;
+                y = (int)(x*ratio);
                 CvInvoke.Resize(this.img, this.img, new Size(x, y));
                 //Console.WriteLine("ok");
             }

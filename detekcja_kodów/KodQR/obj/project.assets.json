@@ -3238,11 +3238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj",
+      "projectUniqueName": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj",
       "projectName": "KodQR",
-      "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj",
+      "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj",
       "packagesPath": "C:\\Users\\kowal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\obj\\",
+      "outputPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

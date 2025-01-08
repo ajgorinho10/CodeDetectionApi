@@ -1,4 +1,5 @@
 ﻿using Emgu.CV;
+using Emgu.CV.ML;
 using Emgu.CV.Structure;
 using System;
 using System.Collections.Generic;
@@ -97,12 +98,14 @@ namespace KodQR.bar
                 char c = color == 1 ? '1' : '0';
                 binarry += new string(c,((int)ilosc));
 
-                //CvInvoke.Circle(ima, new System.Drawing.Point(x, y_f), 3, new MCvScalar(0, 255, 0), -1);
+                //CvInvoke.Circle(ima, new System.Drawing.Point(m_points[i].X, y_f), 3, new MCvScalar(0, 255, 0), -1);
                 distance_list.Add(dis);
             }
 
+            //CvInvoke.Imshow("ima", ima);
+            //CvInvoke.WaitKey(0);
 
-            if(binarry.Count() < 43)
+            if (binarry.Count() < 80)
             {
                 return "Brak";
             }

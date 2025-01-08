@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\CodeDetection.csproj": {}
+    "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\CodeDetection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\CodeDetection.csproj": {
+    "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\CodeDetection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\CodeDetection.csproj",
+        "projectUniqueName": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\CodeDetection.csproj",
         "projectName": "CodeDetection",
-        "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\CodeDetection.csproj",
+        "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\CodeDetection.csproj",
         "packagesPath": "C:\\Users\\kowal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\obj\\",
+        "outputPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj": {
-                "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj"
+              "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj": {
+                "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj": {
+    "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj",
+        "projectUniqueName": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj",
         "projectName": "KodQR",
-        "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\KodQR.csproj",
+        "projectPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\KodQR.csproj",
         "packagesPath": "C:\\Users\\kowal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kodów\\KodQR\\obj\\",
+        "outputPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kodów\\KodQR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -10,7 +10,7 @@ def convert_image_to_base64(image_path):
     
 def send_image_to_api(base64_image):
     base64_image = convert_image_to_base64(image_path)
-    url = "https://localhost:7045/Detect/qr"
+    url = "https://localhost:7045/Detect/bar"
 
     data = {
         "img": base64_image
@@ -24,6 +24,6 @@ def send_image_to_api(base64_image):
     else:
         print(f"Failed to upload image. Status code: {response.status_code}")
 
-image_path = "qr_bar.jpg"
+image_path = "./kodyBarZdjecia/bar1_2.jpg"
 base64_image = convert_image_to_base64(image_path)
 send_image_to_api(base64_image)

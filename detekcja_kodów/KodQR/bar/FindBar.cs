@@ -36,8 +36,8 @@ namespace KodQR.bar
 
         static Mat CropRotatedRect(Mat inputImage, RotatedRect rotatedRect)
         {
-            float sideLength = 1195;
-            float sideLength2 = 650;
+            float sideLength = 800;
+            float sideLength2 = 500;
             PointF[] sours = rotatedRect.GetVertices();
 
             double[] dis = new double[3] {

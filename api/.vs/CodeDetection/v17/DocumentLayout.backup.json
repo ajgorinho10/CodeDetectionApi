@@ -1,16 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\",
+  "WorkspaceRootPath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2C3ADE5-050D-4B76-91D7-37C0603A0A49}|CodeDetection.csproj|c:\\users\\kowal\\documents\\github\\kodqr\\api\\controllers\\programcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C75A051-C062-4F83-B0A8-304955788BB5}|..\\detekcja_kod\u00F3w\\KodQR\\KodQR.csproj|c:\\users\\kowal\\documents\\github\\kodqr\\codedetectionapi\\detekcja_kod\u00F3w\\kodqr\\bar\\findbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C75A051-C062-4F83-B0A8-304955788BB5}|..\\detekcja_kod\u00F3w\\KodQR\\KodQR.csproj|c:\\users\\kowal\\documents\\github\\kodqr\\codedetectionapi\\detekcja_kod\u00F3w\\kodqr\\bar\\decoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2C3ADE5-050D-4B76-91D7-37C0603A0A49}|CodeDetection.csproj|c:\\users\\kowal\\documents\\github\\kodqr\\codedetectionapi\\api\\controllers\\programcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2C3ADE5-050D-4B76-91D7-37C0603A0A49}|CodeDetection.csproj|solutionrelative:controllers\\programcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C75A051-C062-4F83-B0A8-304955788BB5}|..\\detekcja_kod\u00F3w\\KodQR\\KodQR.csproj|c:\\users\\kowal\\documents\\github\\kodqr\\detekcja_kod\u00F3w\\kodqr\\qr\\qrapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C75A051-C062-4F83-B0A8-304955788BB5}|..\\detekcja_kod\u00F3w\\KodQR\\KodQR.csproj|c:\\users\\kowal\\documents\\github\\kodqr\\detekcja_kod\u00F3w\\kodqr\\bar\\barapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,43 +26,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Barapi.cs",
-              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
-              "RelativeDocumentMoniker": "..\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
-              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
-              "RelativeToolTip": "..\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FindBar.cs",
+              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kod\u00F3w\\KodQR\\bar\\FindBar.cs",
+              "RelativeDocumentMoniker": "..\\detekcja_kod\u00F3w\\KodQR\\bar\\FindBar.cs",
+              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kod\u00F3w\\KodQR\\bar\\FindBar.cs*",
+              "RelativeToolTip": "..\\detekcja_kod\u00F3w\\KodQR\\bar\\FindBar.cs*",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwF8AAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T18:07:19.95Z",
+              "WhenOpened": "2025-01-08T20:24:04.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Qrapi.cs",
-              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
-              "RelativeDocumentMoniker": "..\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
-              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
-              "RelativeToolTip": "..\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAABJAAAAAAAAAA==",
+              "Title": "Decoding.cs",
+              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kod\u00F3w\\KodQR\\bar\\Decoding.cs",
+              "RelativeDocumentMoniker": "..\\detekcja_kod\u00F3w\\KodQR\\bar\\Decoding.cs",
+              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\detekcja_kod\u00F3w\\KodQR\\bar\\Decoding.cs",
+              "RelativeToolTip": "..\\detekcja_kod\u00F3w\\KodQR\\bar\\Decoding.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwGsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T17:34:50.593Z",
+              "WhenOpened": "2025-01-08T20:20:04.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Barapi.cs",
+              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
+              "RelativeDocumentMoniker": "..\\..\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
+              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
+              "RelativeToolTip": "..\\..\\detekcja_kod\u00F3w\\KodQR\\bar\\Barapi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T18:07:19.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Qrapi.cs",
+              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
+              "RelativeDocumentMoniker": "..\\..\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
+              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
+              "RelativeToolTip": "..\\..\\detekcja_kod\u00F3w\\KodQR\\qr\\Qrapi.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T17:34:50.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ProgramController.cs",
-              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\Controllers\\ProgramController.cs",
+              "DocumentMoniker": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\Controllers\\ProgramController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProgramController.cs",
-              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\Controllers\\ProgramController.cs",
+              "ToolTip": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\Controllers\\ProgramController.cs",
               "RelativeToolTip": "Controllers\\ProgramController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T16:29:15.514Z",
               "EditorCaption": ""

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WCnPnphbNkQ=",
+  "dgSpecHash": "WGoDTdCUrKg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\api\\CodeDetection.csproj",
+  "projectFilePath": "C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\api\\CodeDetection.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kowal\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
     "C:\\Users\\kowal\\.nuget\\packages\\accord.imaging\\3.8.0\\accord.imaging.3.8.0.nupkg.sha512",
