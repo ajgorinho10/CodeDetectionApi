@@ -24,6 +24,6 @@ def send_image_to_api(base64_image):
     else:
         print(f"Failed to upload image. Status code: {response.status_code}")
 
-image_path = "./kodyBarZdjecia/bar1_2.jpg"
+image_path = "./kodyBarZdjecia/bar_16.jpg"
 base64_image = convert_image_to_base64(image_path)
 send_image_to_api(base64_image)

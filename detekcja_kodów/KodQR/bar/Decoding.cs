@@ -63,19 +63,21 @@ namespace KodQR.bar
                 }
             }
 
-            //d = Math.Round(d);
-            double dend = m_points[m_points.Count - 1].X - m_points[m_points.Count - 2].X;
-            //Console.WriteLine($"d1:{d1} d2:{m_points[m_points.Count - 2].X} d3:{m_points[m_points.Count - 1].X}");
-            //Console.WriteLine($"modul_size:{d}");
-            //Console.WriteLine($"start:{z0}");
-
             string binarry = "";
             double d = (m_points[3].X - m_points[0].X)/3.0;
             double dz = (m_points[m_points.Count-1].X - m_points[m_points.Count-4].X)/3.0;
             double dz2 = (m_points[31].X - m_points[28].X)/3.0;
 
-            d = (d + dz +dz2) / 3.0;
-            //double d = (d2-d1)/95.0;
+            if(d> dz2)
+            {
+                d = (dz + dz2) / 2.0;
+            }
+            else
+            {
+                d = (d + dz2) / 2.0;
+            }
+
+            //d = dz2;
 
             List<double> distance_list = new List<double>();
             
@@ -86,7 +88,7 @@ namespace KodQR.bar
                 int color = this.img.Data[y_f, x, 0] == 255 ? 0 : 1;
                 double ilosc = dis / d;
                 //ilosc = Math.Round(ilosc);
-                if(ilosc %((int)ilosc) > 0.63)
+                if(ilosc %((int)ilosc) > 0.50)
                 {
                     ilosc++;
                 }
@@ -101,7 +103,7 @@ namespace KodQR.bar
                 //CvInvoke.Circle(ima, new System.Drawing.Point(m_points[i].X, y_f), 3, new MCvScalar(0, 255, 0), -1);
                 distance_list.Add(dis);
             }
-
+            //Console.WriteLine(binarry.Count()+" "+binarry);
             //CvInvoke.Imshow("ima", ima);
             //CvInvoke.WaitKey(0);
 

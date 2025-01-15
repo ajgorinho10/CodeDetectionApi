@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Collections.Concurrent;
 using System.Diagnostics;
 using KodQR.qr;
+using ImageProcessor.Processors;
 
 namespace KodQR.bar
 {
@@ -26,16 +27,18 @@ namespace KodQR.bar
             double ratio = (double)this.img.Height / (double)this.img.Width;
             if(this.img.Width > 1200 || this.img.Height > 1200)
             {
-                x = 1600;
+                x = 1200;
                 y = (int)(x*ratio);
                 CvInvoke.Resize(this.img, this.img, new Size(x, y));
                 //Console.WriteLine("ok");
             }
 
-            
-            //CvInvoke.GaussianBlur(this.img, this.img, new Size(1, 1), 2.0);
 
-            FindBar fBar = new FindBar(this.img.Convert<Gray,Byte>(),this.img);
+            //CvInvoke.GaussianBlur(this.img, this.img, new Size(1, 1), 10.0);
+
+            CvInvoke.Normalize(this.img, this.img, 0,180, NormType.MinMax);
+
+            FindBar fBar = new FindBar(this.img.Convert<Gray,Byte>(), this.img.Convert<Bgr, Byte>());
             List<Image<Gray, Byte>> barImages = fBar.find();
 
             CvInvoke.Resize(fBar.img_codes, fBar.img_codes, new Size(800, 600));
@@ -43,8 +46,8 @@ namespace KodQR.bar
             //CvInvoke.WaitKey(0);
             int i = 1;
             List<String> msg = new List<String>();
-            foreach(var img in barImages)
-            {
+            Parallel.ForEach(barImages, img => {
+            
                 //CvInvoke.Imshow($"img: {i}", img);
                 //CvInvoke.WaitKey(0);
                 projection p = new projection(img);
@@ -56,15 +59,15 @@ namespace KodQR.bar
                     //CvInvoke.Imshow($"img2: {i}", p.imBar);
                     Decoding dec = new Decoding(p.barInTab, p.imBar, p.y_f);
                     String odp = dec.decode();
-                    if(odp != "Brak")
+                    if (odp != "Brak")
                     {
                         msg.Add(odp);
                     }
                     CvInvoke.WaitKey(0);
                 }
                 i++;
-               
-            }
+
+            });
 
             return msg;
         }

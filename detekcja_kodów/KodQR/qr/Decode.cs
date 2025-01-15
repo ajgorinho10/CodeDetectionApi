@@ -386,7 +386,7 @@ namespace KodQR.qr
             Point p2 = new Point(pointsTopatterns[1].X, pointsTopatterns[1].Y);
             Point p3 = new Point(pointsTopatterns[2].X, pointsTopatterns[2].Y);
 
-            while (img.Data[p2.Y, p2.X, 0] == 0)
+            while (p2.X >= 0 && p2.X <= img.Width && p2.Y >= 0 && p2.Y <= img.Height && img.Data[p2.Y, p2.X, 0] == 0)
             {
                 p2.X++;
             }
@@ -653,9 +653,18 @@ namespace KodQR.qr
             {
                 Point p = pixels.Pop();
 
+                if(p.Y > img.Height || p.Y < 0 || p.X > img.Width || p.X < 0)
+                {
+                    if (descriptors.Area > 0)
+                    {
+                        descriptors.Centroid = new Point(descriptors.Centroid.X / descriptors.Area, descriptors.Centroid.Y / descriptors.Area);
+                    }
+                    pixels.Clear();
+                    return descriptors;
+                }
                 visited[p.Y, p.X] = true;
-
                 byte color = img.Data[p.Y, p.X, 0];
+
 
                 if (color == expexted_color)
                 {

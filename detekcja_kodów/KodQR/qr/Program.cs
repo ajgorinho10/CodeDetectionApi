@@ -49,25 +49,36 @@ namespace KodQR
 
             //KODY BAR
             //-------------------------------------------------------------------
-            //string filePath = "kodyBarZdjecia//bar2_3.jpg";
+            string filePath = "kodyBarZdjecia//bar2_3.jpg";
             //string filePath = "kodyBarZdjecia//bar2_4.jpg"; 
             //string filePath = "kodyBarZdjecia//bar2_5.jpg";
             //string filePath = "kodyBarZdjecia//bar2_6.jpg"; 
-            string filePath = "kodyBarZdjecia//bar2_7.jpg";
+            //string filePath = "kodyBarZdjecia//bar2_7.jpg";
             //string filePath = "kodyBarZdjecia//bar2_8.jpg";
             //string filePath = "kodyBarZdjecia//bar2_9.jpg"; // -1
             //string filePath = "kodyBarZdjecia//bar2_10.jpg"; 
-            //string filePath = "kodyBarZdjecia//bar2_11.jpg"; 
+            //string filePath = "kodyBarZdjecia//bar2_11.jpg"; //-1
             //string filePath = "kodyBarZdjecia//bar2_12.jpg";
             //string filePath = "kodyBarZdjecia//bar2_13.jpg";
             //string filePath = "kodyBarZdjecia//bar2_14.jpg";
+            //string filePath = "kodyBarZdjecia//bar_16.jpg";
+            //string filePath = "kodyBarZdjecia//bar_15.jpg";
             //-------------------------------------------------------------------
 
             //string filePath = "kodyBarZdjecia//qr_bar.jpg";
 
             DateTime startTime = DateTime.Now;
-
-            Detection(filePath);
+            int ile = 0;
+            int max = 0;
+            for(int i = 1; i <= 25; i++)
+            {
+                Console.WriteLine($"i=={i}");
+                filePath = $"C:\\Users\\kowal\\Documents\\GitHub\\KodQR\\CodeDetectionApi\\kodyBarZdjecia\\bar_{i}.jpg";
+                List<String> tmp = Detection(filePath);
+                if (tmp.Count > 0) { ile++; }
+                max++;
+            }
+            Console.WriteLine($"ilosc:{ile} wszystkie:{max} dokladnosc:{(double)ile/(double)max}");
 
             DateTime endTime = DateTime.Now;
             TimeSpan duration = endTime - startTime;
@@ -102,8 +113,11 @@ namespace KodQR
 
                 foreach (var q in bar_info)
                 {
-                    list.Add(q);
-                    Console.WriteLine("EAN-13:" + q);
+                    if (!list.Contains(q))
+                    {
+                        list.Add(q);
+                        Console.WriteLine("EAN-13:" + q);
+                    }
                 }
             }
 

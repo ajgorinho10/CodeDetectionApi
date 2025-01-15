@@ -170,18 +170,23 @@ namespace KodQR.qr
         {
 
             Point krawendz = new Point(punkt.X, punkt.Y);
-            while (img.Data[krawendz.Y, krawendz.X, 0] == 0)
+
+            while (krawendz.X <= img.Width && krawendz.Y <= img.Height && krawendz.X >= 0 && krawendz.Y >= 0 && img.Data[krawendz.Y, krawendz.X, 0] == 0)
             {
-                //Console.WriteLine($"");
                 krawendz.Y -= 1;
             }
 
-            while (img.Data[krawendz.Y, krawendz.X, 0] == 255)
+            while (krawendz.X <= img.Width && krawendz.Y <= img.Height && krawendz.X >= 0 && krawendz.Y >= 0 &&img.Data[krawendz.Y, krawendz.X, 0] == 255)
             {
                 krawendz.Y -= 1;
             }
             punkt.X = krawendz.X;
             punkt.Y = krawendz.Y;
+
+            if(krawendz.X >= img.Width && krawendz.Y >= img.Height && krawendz.X <= 0 && krawendz.Y <= 0)
+            {
+                return new Point();
+            }
 
             int Width = width;
             int Height = height;

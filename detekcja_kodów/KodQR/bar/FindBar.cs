@@ -37,19 +37,9 @@ namespace KodQR.bar
         static Mat CropRotatedRect(Mat inputImage, RotatedRect rotatedRect)
         {
             float sideLength = 800;
-            float sideLength2 = 500;
+            float sideLength2 = 600;
+            
             PointF[] sours = rotatedRect.GetVertices();
-
-            double[] dis = new double[3] {
-                distance_me(sours[0],sours[1]),
-                distance_me(sours[0],sours[2]),
-                distance_me(sours[0],sours[3]),
-            };
-
-            if (inputImage.Height < sideLength2) {
-                sideLength = 600;
-                sideLength2 = 600;
-            }
 
             PointF[] destinationPoints = new PointF[] {
                 new PointF(0,0),
@@ -85,7 +75,7 @@ namespace KodQR.bar
             CvInvoke.ConvertScaleAbs(gradient, absGradient, 1.0, 1.0);
 
             Mat blurred = new Mat();
-            CvInvoke.Blur(absGradient, blurred, new Size(9, 9), new Point(-1, -1));
+            CvInvoke.Blur(absGradient, blurred, new Size(15,15), new Point(-1, -1));
 
             Mat thresh = new Mat();
             CvInvoke.Threshold(blurred, thresh, 128, 255, ThresholdType.Binary | ThresholdType.Otsu);
@@ -149,19 +139,16 @@ namespace KodQR.bar
 
             List<Image<Gray,Byte>> image_list = new List<Image<Gray,Byte>>();
 
-            foreach (var contur in conturs)
-            {
+            Parallel.ForEach(conturs, contur => {
+
 
                 Mat dstImage = CropRotatedRect(this.img_color.Mat, contur);
-
-                barBinarization binrize = new barBinarization(dstImage.ToImage<Bgr,Byte>());
-                binrize.barBinarize();
-
+                CvInvoke.AdaptiveThreshold(dstImage.ToImage<Gray, Byte>(), dstImage, 255.0, AdaptiveThresholdType.GaussianC, ThresholdType.Binary, 81, 7.5);
                 //CvInvoke.Imshow("ehh", binrize.img_binarry);
                 //CvInvoke.WaitKey(0);
 
-                image_list.Add(findBetter(binrize.img_binarry));
-            }
+                image_list.Add(findBetter(dstImage.ToImage<Gray, Byte>()));
+            });
 
             return image_list;
         }
@@ -232,14 +219,10 @@ namespace KodQR.bar
                 }
             }
 
-
-            // Wyświetlenie najlepszej wartości i kąta obrotu
-            //Console.WriteLine($"Najlepszy kąt obrotu: {bestAngle}° z wartością SUM(MAX): {maxSum}");
             Image<Gray, Byte> rotateed = RotateImage(img, bestAngle);
 
-            //CvInvoke.Imshow("Binarized Image", rotateed);
-            //CvInvoke.WaitKey(0);
-
+            CvInvoke.Blur(rotateed,rotateed,new Size(2,2),new Point(-1,-1));
+            CvInvoke.Threshold(rotateed, rotateed,240,255,ThresholdType.Binary);
             return rotateed;
         }
 

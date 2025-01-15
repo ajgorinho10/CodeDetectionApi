@@ -132,7 +132,8 @@ namespace KodQR.bar
                 CvInvoke.Line(im, new System.Drawing.Point(0, y[0]), new System.Drawing.Point(im.Width, y[0]), new MCvScalar(255, 0, 0));
                 CvInvoke.Line(im, new System.Drawing.Point(0, y[y.Count-1]), new System.Drawing.Point(im.Width, y[y.Count -1]), new MCvScalar(255, 0, 0));
 
-                int y_final = (y[0] + y[y.Count - 1]) / 2;
+                //int y_final = (y[0] + y[y.Count - 1]) / 2;
+                int y_final = y[(y.Count - 1)/2];
                 CvInvoke.Line(im, new System.Drawing.Point(0, y_final), new System.Drawing.Point(im.Width, y_final), new MCvScalar(255, 0, 0));
 
                 int[] barTab = new int[ima.Width];
